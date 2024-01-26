@@ -1,0 +1,74 @@
+/*Below CSS adapted from https://css.gg under the MIT License*/
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/menu.css');
+
+.global-nav-list {
+    display: none;
+
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+    z-index: 1;
+}
+
+.global-nav-list-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+
+    background-color: black;
+}
+
+.global-nav-link {
+    display: inline-block;
+    
+    color:white;
+    padding: 0.8rem;
+}
+
+.global-nav-link:hover {
+    background-color:grey;
+}
+
+.sub-menu {
+    display: none;
+}
+
+.global-nav-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+    
+    color:black;
+    list-style: none;
+    text-decoration: underline;
+}
+
+.global-nav-toggle {
+    display: inline-block;
+
+    position: relative;
+
+    padding: 0.6rem;
+
+    color: white;
+    background-color: var(--header-bg--color);
+    border: none;
+
+    font: inherit;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 44rem) {
+    .global-nav-list {
+        position:static;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .global-nav-toggle {
+        display: none;
+    }
+}

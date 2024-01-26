@@ -1,0 +1,37 @@
+.footer {
+    margin-top: auto;
+    text-align: center;
+    
+    background-color: var(--header-bg-color);
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    list-style: none;
+}
+
+.footer-link {
+    color:white;
+    padding:0.6rem;
+}
+
+.footer-link:hover {
+    background-color:grey;
+}
+
+
+@media screen and (min-width: 44rem) {
+    .footer {
+        padding: 2rem;
+    }
+
+    .footer-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
