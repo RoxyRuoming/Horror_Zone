@@ -1,5 +1,5 @@
 # Horror_Zone
-This website is designed for communication among horror-theme enthusiasts 😈
+This website is designed for horror-theme enthusiasts 😈
 
 # Get started
 run 'npm install', 'npm run build', 'npm start'
